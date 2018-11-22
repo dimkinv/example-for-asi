@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'app';
+  public title = 'app';
+
+  onButtonClicked() {
+    this.title = 'clicked';
+  }
+
+  onTitleChange(title) {
+    this.title = title;
+  }
 }
